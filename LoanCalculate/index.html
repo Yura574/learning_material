@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Loan Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="calculateBody">
+    <div class="loan">
+        <div>
+            <div>
+                <div class="header">Enter loan Data:</div>
+                <div class="dataNames">
+                    <div>Amount of loan($)</div>
+                    <div>Annual interest(%)</div>
+                    <div>Repayment period(years)</div>
+                    <div> Zipcode (to find lenders)</div>
+                </div>
+                <div class="loan">
+                    <div class="payment">
+                        <div class="header">Approximate Payment</div>
+                        <div class="dataNames">
+                            <div>Monthly payment</div>
+                            <div>Total payment</div>
+                            <div>Total interest</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="inputs">
+                <label><input id="amount"></label>
+                <label><input id="annual"></label>
+                <label><input id="repayment"></label>
+                <label><input id="zipcode"></label>
+            </div>
+            <div class="payment">
+                <div class="button">
+                    <button>Calculate</button>
+                </div>
+                <div>
+                    <div id="monthlyPayment"></div>
+                    <div id="totalPayment"></div>
+                    <div id="totalInterest"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <canvas class="canvas"></canvas>
+    </div>
+</div>
+</body>
+</html>
