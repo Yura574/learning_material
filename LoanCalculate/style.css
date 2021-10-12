@@ -1,0 +1,85 @@
+body {
+    background: rgba(28, 64, 198, .5);
+}
+
+.calculateBody {
+    display: flex;
+    justify-content: space-around;
+    width: 780px;
+    margin: 30px auto;
+
+}
+
+.loan {
+    display: flex;
+
+}
+
+.dataNames {
+    /*width: 200px;*/
+    margin-right: 20px;
+    margin-top: 7px;
+
+
+}
+
+.dataNames div {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    margin-top: 7px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.inputs label {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    margin-top: 7px;
+}
+
+
+input {
+    background: rgba(28, 64, 198, .4);
+    border-radius: 5px;
+}
+input:focus{
+    background: white;
+}
+
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.payment {
+    margin-top: 20px;
+}
+
+.button {
+    width: 70px;
+    margin: 0 auto;
+}
+
+button {
+    border-radius: 5px;
+    box-shadow: 0 0 4px 2px white;
+    background: cornflowerblue;
+}
+
+.canvas {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    background: white;
+}
