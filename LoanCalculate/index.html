@@ -31,14 +31,14 @@
         </div>
         <div>
             <div class="inputs">
-                <label><input id="amount"></label>
-                <label><input id="annual"></label>
-                <label><input id="repayment"></label>
-                <label><input id="zipcode"></label>
+                <label><input id="amount" onchange="calculate()"></label>
+                <label><input id="annual" onchange="calculate()"></label>
+                <label><input id="repayment" onchange="calculate()"></label>
+                <label><input id="zipcode" onchange="calculate()"></label>
             </div>
             <div class="payment">
                 <div class="button">
-                    <button>Calculate</button>
+                    <button onclick="calculate()">Calculate</button>
                 </div>
                 <div>
                     <div id="monthlyPayment"></div>
@@ -50,8 +50,9 @@
     </div>
 
     <div>
-        <canvas class="canvas"></canvas>
+        <canvas class="canvas" id="graph"></canvas>
     </div>
 </div>
+<script src="js.js"></script>
 </body>
 </html>
