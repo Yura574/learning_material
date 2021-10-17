@@ -1,0 +1,180 @@
+html {
+    background: rgba(50, 22, 92, 0.75);
+}
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.wrapper {
+}
+
+.item-container {
+
+    position: relative;
+    width: 1920px;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.active, .next {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.description {
+    /*width: 900px;*/
+    margin: 30px 10%;
+    font-size: 32px;
+    /*border: 2px solid black;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+
+}
+
+.description img {
+    margin-bottom: 50px;
+    width: 1620px;
+    height: 850px;
+}
+
+.caption {
+    position: relative;
+    text-align: left;
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    cursor: pointer;
+}
+
+.control.left {
+    left: 0;
+    right: auto;
+}
+
+.control.right {
+    left: auto;
+    right: 0;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 100px;
+}
+
+.arrow.right {
+    right: 50%;
+}
+
+.bullets {
+    position: relative;
+right: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.bullet {
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.active_bullet {
+    width: 30px;
+    height: 30px;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+    .description img {
+        width: 320px;
+    }
+
+    .item-container {
+        width: 320px;
+    }
+
+    .caption {
+        padding-left: 0;
+    }
+
+    .bullets {
+        right: 18%;
+    }
+
+    .arrow {
+        font-size: 20px;
+    }
+}
+
+
+/*.contain {*/
+/*    width: 1720px;*/
+/*    margin: 40px auto;*/
+/*    background: darkgray;*/
+/*    padding: 10px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.caption{*/
+/*    margin-top: 30px;*/
+/*    font-size: 30px;*/
+/*}*/
+/*.picture{*/
+/*    height: 600px;*/
+/*}*/
+
+/*.mem {*/
+/*    width: 800px;*/
+/*    margin: 0 auto;*/
+/*    display: none;*/
+/*}*/
+/*.active {*/
+/*    display: block;*/
+/*}*/
+
+/*.buttons{*/
+
+/*    position: absolute;*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*    border:2px solid orange;*/
+/*    border-radius: 15%;*/
+/*}*/
+/*#next {*/
+/*    margin-left: 300px;*/
+/*}*/
+/*#prev {*/
+/*    margin-left: 600px;*/
+/*}*/
