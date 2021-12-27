@@ -1,7 +1,7 @@
 import React from "react";
 
 export function AccordionBody() {
-    console.log('render AccordionBody')
+    console.log('render UncontrolledAccordionBody')
     return (
         <ul>
             <li>1</li>

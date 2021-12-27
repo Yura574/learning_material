@@ -5,6 +5,6 @@ type AccordionTitleType = {
 }
 
 export function AccordionTitle(props: AccordionTitleType) {
-    console.log('render AccordionTitle')
+    console.log('render UncontrolledAccordionTitle')
     return <h3>{props.title}</h3>
 }

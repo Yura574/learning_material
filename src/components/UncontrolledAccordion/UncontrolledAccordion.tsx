@@ -1,5 +1,5 @@
-import {AccordionTitle} from "./AccordionTitle";
-import {AccordionBody} from "./AccordionBody";
+import {UncontrolledAccordionTitle} from "./UncontrolledAccordionTitle";
+import {UncontrolledAccordionBody} from "./UncontrolledAccordionBody";
 import React, {useState} from "react";
 
 type UncontrolledAccordionType = {
@@ -10,13 +10,14 @@ export function UncontrolledAccordion(props: UncontrolledAccordionType) {
     const [collapsed, setCollapsed] = useState(true)
 
     function toggleMenu() {
-        return collapsed ? setCollapsed(false) : setCollapsed(true)
+        return setCollapsed(!collapsed)
+        // collapsed ? setCollapsed(false) : setCollapsed(true)
     }
 
     return (
         <div>
-            <AccordionTitle toggleMenu={toggleMenu} title={props.title}/>
-            {!collapsed && <AccordionBody/>}
+            <UncontrolledAccordionTitle toggleMenu={toggleMenu} title={props.title}/>
+            {!collapsed && <UncontrolledAccordionBody/>}
         </div>
     )
 }

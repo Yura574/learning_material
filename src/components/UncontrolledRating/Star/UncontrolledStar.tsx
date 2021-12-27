@@ -3,7 +3,7 @@ import React from "react";
 type StarType = {
     selected: boolean
 }
-export function Star(props: StarType) {
+export function UncontrolledStar(props: StarType) {
     console.log('render star')
 
     if (props.selected ) {

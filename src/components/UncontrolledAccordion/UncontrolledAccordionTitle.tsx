@@ -5,7 +5,7 @@ type AccordionTitleType = {
     title: string
 }
 
-export function AccordionTitle(props: AccordionTitleType) {
-    console.log('render AccordionTitle')
+export function UncontrolledAccordionTitle(props: AccordionTitleType) {
+    console.log('render UncontrolledAccordionTitle')
     return <h3 onClick={props.toggleMenu}> {props.title} </h3>
 }
