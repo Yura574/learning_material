@@ -1,13 +1,8 @@
-import React from "react";
-
-type OnOffType = {
-    on: boolean
-    setStyle: (on: boolean) => void
-}
+import React, {useState} from "react";
 
 
-export function OnOff(props: OnOffType) {
-debugger
+export function UncontrolledOnOff() {
+    const [on, setOn] = useState(true)
     const switcher = {
         margin: "20px",
         display: 'flex',
@@ -19,7 +14,7 @@ debugger
         border: '2px solid black',
         marginLeft: '5px',
         padding: '2px',
-        background: props.on ? 'green' : 'white',
+        background: on ? 'green' : 'white',
     }
     const offStyle = {
         width: '30px',
@@ -27,7 +22,7 @@ debugger
         border: '2px solid black',
         marginLeft: '5px',
         padding: '2px',
-        background: props.on ? 'white' : 'red'
+        background: on ? 'white' : 'red'
     }
     const ball = {
         width: '20px',
@@ -35,12 +30,17 @@ debugger
         borderRadius: '50%',
         border: '1px solid black',
         marginLeft: '10px',
-        background: props.on ? 'green' : 'red'
+        /*margin-top: 3px;*/
+        background: on ? 'green' : 'red'
+    }
+
+    function setStyle() {
+        return on? setOn(false): setOn(true)
     }
 
     return <div style={switcher}>
-        <div style={onStyle} onClick={()=>{props.setStyle(true)}}>on</div>
-        <div style={offStyle} onClick={()=>{props.setStyle(false)}}>off</div>
+        <div style={onStyle} onClick={setStyle}>on</div>
+        <div style={offStyle} onClick={setStyle}>off</div>
         <div style={ball}> </div>
     </div>
 }
