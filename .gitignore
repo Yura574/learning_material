@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /.idea
+src/stories/myComponents
+src/stories/examples
+src/stories/assets
