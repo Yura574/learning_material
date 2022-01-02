@@ -23,6 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 
 /.idea
-src/stories/myComponents
+src/stories/myComponents/MyButton.stories.tsx
+src/stories/myComponents/myButton.css
+src/stories/myComponents/MyButton.tsx
 src/stories/examples
 src/stories/assets
+src/stories/Introduction.stories.mdx
